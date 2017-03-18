@@ -35,7 +35,7 @@ func main() {
 
 	verrs := []string{}
 	if listen == "" {
-		verrs = append(verrs, "latency is a required flag")
+		verrs = append(verrs, "listen is a required flag")
 	}
 	if ratekpbs == "" {
 		verrs = append(verrs, "rate is a required flag")
