@@ -1,0 +1,31 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "UlWLJjLRCRtXOzP6nLHb5YTWK+c=",
+			"path": "github.com/armon/go-socks5",
+			"revision": "e75332964ef517daa070d7c38a9466a0d687e0a5",
+			"revisionTime": "2016-09-02T18:42:37Z"
+		},
+		{
+			"checksumSHA1": "x6j7TGehHrtJkXBsTL9l5fulmFA=",
+			"path": "github.com/aybabtme/iocontrol",
+			"revision": "ad15bcfc95a08d0b9d072012fb7618512aafb99b",
+			"revisionTime": "2015-08-09T00:20:02Z"
+		},
+		{
+			"checksumSHA1": "TKmBYGnpk/Ibn5Fl3VE2n9hUO/E=",
+			"path": "github.com/benbjohnson/clock",
+			"revision": "7dc76406b6d3c05b5f71a86293cbcf3c4ea03b19",
+			"revisionTime": "2016-12-15T17:48:38Z"
+		},
+		{
+			"checksumSHA1": "9jjO5GjLa0XF/nfWihF02RoH4qc=",
+			"path": "golang.org/x/net/context",
+			"revision": "e90d6d0afc4c315a0d87a568ae68577cc15149a0",
+			"revisionTime": "2016-07-15T16:59:30Z"
+		}
+	],
+	"rootPath": "github.com/lstoll/floodgate"
+}
