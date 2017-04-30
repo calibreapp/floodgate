@@ -1,0 +1,17 @@
+language: go
+go:
+- 1.8
+script: "./script/cibuild"
+deploy:
+  provider: s3
+  access_key_id: AKIAIHZKDSWU6PBCT72Q
+  bucket: s3.lstoll.net
+  local_dir: artifacts
+  upload_dir: artifacts/floodgate
+  acl: public_read
+  skip_cleanup: true
+  on:
+    repo: calibreapp/floodgate
+    branch: master
+  secret_access_key:
+    secure: dLkMnT3xymS+x3vVevhDu8ZdknUagLePBl6sS7xa+rhcB8NR0/JMo9grEExzptMBQesbTanr/RTkLg4jHqOKk43I6OcA+SG0JbHYq2fRMMkR0wHgDjlNlByQAvTk4MsgS3mM6MsJBCzVs3MRC017jChvrjWC5NdDgX0NThukNuVFbhj1Q/16jszU/0tgbH0oh+yjG1XmvWcJ8QZRaY51FkurRz0Q3gGjV0S7oEec840OrKkobeCmmP0SVqLW9Jgv4mCuuoRH5QfGENahhTWTT7d+qacjIdArw7M40KcRFbGDkTUG3PWpz+jJ3ja78oMR9+sBP9TyOBJHsb6IASw8GuPnfYFcryXp7SHk+otO8wLQzOsLzvNlQ2vOaz2kHKQpUxbQv65lQotCp2i2G22zq5j1mpEGEE0zF2zIF7MuFPYMJSvgJfnhEsYc3MZLKnI5iN7vnoS6p+B8pSBBDCVBw0i8y+rt/f461WCqQdeeUnniTfCDARQRAXP8sO0WyQfS3GUoLhRH7bo+EOvQGhOdL1KMH84moer+hMfNek2Uydq6jxYzEB/lVlgcH50Ellzy1Wb84Xmk8rWN/7Q1xVoMx0TmcyPfPFx462TllKGXS3nzyY0Xd0CO1jRAyjGcElGqQfTcPSzXlWFeM8VJ8nQSKrH/jnoUfdxTpcursTM/ku4=
