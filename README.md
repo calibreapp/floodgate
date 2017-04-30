@@ -26,7 +26,9 @@ Floodgate is packaged as pre-compiled binaries that work on all major operating 
 
 Unzip, copy the binary, and run!
 
-![Image](assets/install.gif)
+<p align="center">
+  <img alt="Yarn" src="assets/install.gif" width="550">
+</p>
 
 
 ## 🖥 Usage
