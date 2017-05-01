@@ -18,11 +18,11 @@ is released for macOS, Linux and Windows. Don't want to install Node, Python or 
 
 Floodgate is packaged as pre-compiled binaries that work on all major operating systems. There are no dependencies to install, it just works. Everywhere.
 
-| Operating system | arch | download |
-|------------------|------|----------|
-| Mac OS           | x64  | Download |
-| Linux            | x64  | Download |
-| Windows          | x64  | Download |
+| Operating system | download |
+|------------------|----------|
+| Mac OS           | [Download](https://cdn.lstoll.net/artifacts/floodgate/floodgate_darwin_amd64.tgz) |
+| Linux            | [Download](https://cdn.lstoll.net/artifacts/floodgate/floodgate_linux_amd64.tgz) |
+| Windows          | [Download](https://cdn.lstoll.net/artifacts/floodgate/floodgate_windows_386.tgz) |
 
 Unzip, copy the binary, and run!
 
