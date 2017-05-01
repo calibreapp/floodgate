@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "--> Cleaning working dirs"
+rm -rf artifacts && mkdir -p artifacts
+rm -rf build
+
+echo "--> Running tests"
+go test ./...
+
+build () {
+    GOOS=$1
+    GOARCH=$2
+    EXT=$3
+    BUILDDIR="build/floodgate_${GOOS}_${GOARCH}"
+    mkdir -p "$BUILDDIR"
+    GOOS="$GOOS" GOARCH=$GOARCH go build -o "$BUILDDIR/floodgate${EXT}" .
+    (cd "$BUILDDIR" && tar -zcf "../../artifacts/floodgate_${GOOS}_${GOARCH}.tgz" .)
+}
+
+echo "--> Building linux/amd64 binaries"
+build linux amd64 ""
+
+echo "--> Building darwin/amd64 binaries"
+build darwin amd64 ""
+
+echo "--> Building windows/386 binaries"
+build windows 386 .exe
